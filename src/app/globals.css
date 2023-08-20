@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Poppins:wght@100;200&family=Roboto:wght@100;300&display=swap');
+
+
+@font-face {
+  font-family: 'specialFont';
+  src: url('./special_txt.ttf');
+}
+
+*{
+  font-family: roboto;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -25,3 +38,80 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.titre{
+   font-family: specialFont;
+}
+
+
+.liste li span{
+  position: relative;
+  
+}
+.liste li{
+  list-style: none;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(5) infinite;
+}
+
+@keyframes slide {
+  100%{
+    top: -140px;
+  }
+}
+@media (min-width: 768px) {
+  .md\:liste li{
+    list-style: none;
+    position: relative;
+    top: 0;
+    animation: slide2 12s steps(5) infinite;
+  }
+  
+  @keyframes slide2 {
+    100%{
+      top: -200px;
+    }
+  }
+}
+
+.shadowi{
+  text-decoration: none;
+}
+.shadowl{
+  text-decoration: none;
+}
+.shadowm{
+  text-decoration: none;
+}
+.shadowt{
+  text-decoration: none;
+}
+.shadowa{
+  text-shadow: none;
+}
+.shadowf{
+  text-decoration: none;
+}
+.shadowf:hover{
+  text-shadow: 0 0 2em rgb(36, 183, 241), 0 0 1em rgb(36, 183, 241);
+}
+.shadowi:hover{
+  text-shadow: 0 0 2em orange, 0 0 1em orange;
+}
+.shadowl:hover{
+  text-shadow: 0 0 2em rgb(36, 183, 241), 0 0 1em rgb(36, 183, 241);
+}
+.shadowm:hover{
+  text-shadow: 0 0 2em red, 0 0 1em red;
+}
+.shadowt:hover{
+  text-shadow: 0 0 2em rgb(36, 183, 241), 0 0 1em rgb(36, 183, 241);
+}
+.shadowa:hover{
+  text-shadow: 0 0 2em rgb(84, 5, 140), 0 0 1em rgb(84, 5, 140);
+}
+.contouretexte{
+  text-shadow: 1px 1px 2px black;
+}
+.fontsd{font-family: Cinzel+Decorative;}
