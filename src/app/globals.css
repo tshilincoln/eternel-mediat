@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Poppins:wght@100;200&family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 
 @font-face {
@@ -16,33 +16,53 @@
 }
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --text-color: #202020;
+  --sec-text-color: #ffffff;
+  --hover-color: #12f7ff;
+  --bg-color: #ffffff;
+  --sec-bg-color: #e6e3e3;
+  --tre-bg-color: #162129;
+  --big-font:2.5rem;
+  --normal-font:2rem;
+  --neo-box-shadow:0 0 .5rem #12f7ff;
+  --font-neo-text-shadow:0 0 10px rgba(18,247,255,0.3),
+  0 0 20px rgba(18,247,255,0.3),
+  0 0 30px rgba(18,247,255,0.3),
+  0 0 40px rgba(18,247,255,0.3),
+  0 0 70px rgba(18,247,255,0.3),
+  0 0 80px rgba(18,247,255,0.3),
+  0 0 100px rgba(18,247,255,0.3),
+  0 0 150px rgba(18,247,255,0.3);
+  
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --bg-color: #162129;
+    --sec-bg-color: #132232;
+    --text-color: #ffffff;
+    --tre-bg-color: #ffffff;
+    --sec-text-color: #060505;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color)
 }
+.sec-bg{
+  background-color: var(--sec-bg-color);
+}
+.prim-bg{ background-color: var(--bg-color);}
 
 .titre{
    font-family: specialFont;
 }
-
+.sec-text-color{color: var(--sec-text-color)}
+.tre-bg-color{background-color: var(--tre-bg-color);}
+.bg-3{text-decoration: none;}
+.bg-3:hover{background-color: var(--tre-bg-color); color: var(--sec-text-color);}
 
 .liste li span{
   position: relative;
@@ -75,43 +95,20 @@ body {
   }
 }
 
-.shadowi{
+.navigation{
   text-decoration: none;
 }
-.shadowl{
-  text-decoration: none;
+.navigation:hover{
+  color: var(--hover-color);
+  text-shadow: 0 0 10px rgba(18,247,255,0.6),
+  0 0 20px rgba(18,247,255,0.6),
+  0 0 30px rgba(18,247,255,0.6),
+  0 0 40px rgba(18,247,255,0.6),
+  0 0 70px rgba(18,247,255,0.6),
+  0 0 80px rgba(18,247,255,0.6),
+  0 0 100px rgba(18,247,255,0.6),
+  0 0 150px rgba(6, 238, 246, 0.6);
 }
-.shadowm{
-  text-decoration: none;
+.primarri-coor-text{
+  color: #12f7ff;
 }
-.shadowt{
-  text-decoration: none;
-}
-.shadowa{
-  text-shadow: none;
-}
-.shadowf{
-  text-decoration: none;
-}
-.shadowf:hover{
-  text-shadow: 0 0 2em rgb(36, 183, 241), 0 0 1em rgb(36, 183, 241);
-}
-.shadowi:hover{
-  text-shadow: 0 0 2em orange, 0 0 1em orange;
-}
-.shadowl:hover{
-  text-shadow: 0 0 2em rgb(36, 183, 241), 0 0 1em rgb(36, 183, 241);
-}
-.shadowm:hover{
-  text-shadow: 0 0 2em red, 0 0 1em red;
-}
-.shadowt:hover{
-  text-shadow: 0 0 2em rgb(36, 183, 241), 0 0 1em rgb(36, 183, 241);
-}
-.shadowa:hover{
-  text-shadow: 0 0 2em rgb(84, 5, 140), 0 0 1em rgb(84, 5, 140);
-}
-.contouretexte{
-  text-shadow: 1px 1px 2px black;
-}
-.fontsd{font-family: Cinzel+Decorative;}
