@@ -8,7 +8,7 @@ export default function About(){
             <section className="block relative">
                 <div className="sm:flex mt-5 md:mt-8">
                     <div className="w-full sm:w-2/6">
-                        <img className="sm:w-11/12 sm:h-full w-4/6 block m-auto" src="/camera.png" alt="" />
+                        <img className="sm:w-11/12 sm:h-full w-4/6 block m-auto" src="./camera.png" alt="" />
                     </div>
                     <div className="w-full sm:w-4/6 items-center justify-center text-center md:text-justify relative ">
                         <div className=" mt-6 py-5 px-10"> 
